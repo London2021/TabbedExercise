@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mC9-K0-BTj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pencil-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tab_Bar_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumbnail_IMG_9389.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="nbt-Ta-ahW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98177558183670044" green="0.80507791042327881" blue="0.35674190521240234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nbt-Ta-ahW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mrc-3h-bwZ"/>
+                            <constraint firstItem="nbt-Ta-ahW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="c2o-7T-PPu"/>
+                            <constraint firstItem="nbt-Ta-ahW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iUL-yQ-Dgv"/>
+                            <constraint firstItem="nbt-Ta-ahW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-44" id="pov-4S-cGe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pencil" image="pencil" catalog="system" id="l48-Yd-vJs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="mor-GN-hJ8">
+            <objects>
+                <viewController id="INl-rY-xRS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pIk-sF-GwY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thumbnail_IMG_7743.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="p3Z-N1-cOY">
+                                <rect key="frame" x="20" y="44" width="374" height="769"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zlY-wS-9Zm"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="Ydy-RN-kmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXG-Vn-f3b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782.608695652174" y="111.83035714285714"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="snt-88-zwr">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="mC9-K0-BTj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0gl-2v-EuY">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="h1m-xV-gtj"/>
+                        <segue destination="INl-rY-xRS" kind="relationship" relationship="viewControllers" id="3WH-dW-yfF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ea-fB-8SI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+        <image name="person" catalog="system" width="64" height="58"/>
+        <image name="thumbnail_IMG_7743.jpg" width="1280" height="1280"/>
+        <image name="thumbnail_IMG_9389.jpg" width="172.80000305175781" height="307.20001220703125"/>
+    </resources>
+</document>
